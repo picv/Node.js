@@ -1,0 +1,17 @@
+{
+  "name": "web_spider",
+  "version": "1.0.0",
+  "description": "一个基于node爬虫",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "Base64": "^1.0.0",
+    "md5": "^2.2.1",
+    "mysql": "^2.13.0",
+    "request": "^2.79.0"
+  }
+}

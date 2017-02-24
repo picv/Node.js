@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moment</title>
+</head>
+<body>
+<p id="time"></p>
+<script src="node_modules/moment/moment.js"></script>
+<script type="text/javascript">
+
+    var time1 = document.getElementById("time");
+    setInterval(function () {
+        var time=moment().format('MMMM Do YYYY, h:mm:ss a');
+        time1.innerHTML =time;
+    },1000);
+</script>
+
+</body>
+</html>

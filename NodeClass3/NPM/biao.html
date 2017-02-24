@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="as"></div>
+    <script src="node_modules/moment/moment.js"></script>
+    <script>
+        var id = document.getElementById("id");
+        var moment = require('moment');
+        var http = require('http');
+
+        http.createServer(function (req,res) {
+            setInterval(function () {
+                var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+                // moment().format('llll');
+                console.log(time);
+                res.end(time);
+            },1000);
+        }).listen(3000);
+    </script>
+</body>
+</html>

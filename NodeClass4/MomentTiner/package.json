@@ -1,0 +1,12 @@
+{
+  "name": "momentTimer",
+  "version": "0.0.1",
+  "description": "时钟Demo",
+  "repository":"",
+  "license": "MIT",
+  "dependencies": {
+    "moment":"2.17.1"
+  }
+}
+
+
